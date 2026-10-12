@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Personal portfolio — software engineering, mobile apps, and selected projects." />
+  <title>Portfolio | Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="glow glow-one" aria-hidden="true"></div><div class="glow glow-two" aria-hidden="true"></div>
+  <header class="site-header"><div class="nav-wrap container">
+    <a class="brand" href="#home" id="brand">Portfolio<span class="brand-dot">.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="navigation" aria-expanded="false">☰</button>
+    <nav id="navigation" class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#activities">Activities</a><a href="#contact">Contact</a>
+    </nav>
+  </div></header>
+  <main>
+    <section class="hero container" id="home"><div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
+      <h1>Hi, I'm <span class="gradient-text" id="heroName">Your Name</span><span class="wave">✳</span></h1>
+      <h2 id="heroRole">Software Engineer · Mobile Developer</h2>
+      <p class="hero-description" id="heroBio"></p>
+      <div class="actions"><a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" id="cvHero" href="assets/cv/CV.pdf" download>Download CV ↓</a></div>
+      <div class="social-line"><a id="githubTop" target="_blank" rel="noopener noreferrer" href="#">GitHub ↗</a><a id="linkedinTop" target="_blank" rel="noopener noreferrer" href="#">LinkedIn ↗</a><a href="#contact">Get in touch ↗</a></div>
+    </div><div class="hero-visual"><div class="photo-frame"><div class="photo-inner" id="heroPhoto"><span id="photoInitials">YN</span></div><span class="photo-corner top-left"></span><span class="photo-corner bottom-right"></span></div><div class="orbit-tag tag-one">&lt;developer /&gt;</div><div class="orbit-tag tag-two">Building useful things ✦</div></div></section>
+    <section class="section container" id="about"><div class="section-heading"><span class="section-number">01 / ABOUT</span><h2>A little about me<span class="accent">.</span></h2></div><div class="about-grid"><p class="about-lead" id="aboutLead"></p><div class="about-detail"><p id="aboutDetail"></p><a class="text-link" id="cvAbout" href="assets/cv/CV.pdf" download>Download my résumé <span>↗</span></a></div></div></section>
+    <section class="section container" id="skills"><div class="section-heading"><span class="section-number">02 / EXPERTISE</span><h2>My toolkit<span class="accent">.</span></h2></div><div class="skills-grid" id="skillsGrid"></div></section>
+    <section class="section container" id="projects"><div class="section-heading section-heading-row"><div><span class="section-number">03 / SELECTED WORK</span><h2>Featured projects<span class="accent">.</span></h2></div><p>Ideas turned into experiences.</p></div><div class="projects-grid" id="projectsGrid"></div></section>
+    <section class="section container" id="activities"><div class="section-heading"><span class="section-number">04 / BEYOND CODE</span><h2>Activities & experience<span class="accent">.</span></h2></div><div class="activity-list" id="activitiesList"></div></section>
+    <section class="section container contact-section" id="contact"><div class="contact-panel"><span class="section-number">05 / LET'S CONNECT</span><h2>Have something in mind?<br /><span class="gradient-text">Let's talk.</span></h2><p>I'm always interested in meaningful collaborations, new projects, and opportunities.</p><a class="btn btn-primary" id="emailButton" href="mailto:hello@example.com">Say hello ↗</a><div class="contact-links"><a id="emailLink" href="mailto:hello@example.com">Email ↗</a><a id="githubBottom" target="_blank" rel="noopener noreferrer" href="#">GitHub ↗</a><a id="linkedinBottom" target="_blank" rel="noopener noreferrer" href="#">LinkedIn ↗</a></div></div></section>
+  </main>
+  <footer class="footer container"><span id="footerName">© Portfolio</span><span>Designed & built with care.</span><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
