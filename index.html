@@ -53,6 +53,13 @@
       </div>
     </section>
   </main>
+  <dialog id="projectDialog" class="project-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header"><span id="dialogCategory"></span><button id="dialogClose" type="button" aria-label="Close project details">✕</button></div>
+    <h2 id="dialogTitle"></h2><p id="dialogDescription"></p>
+    <div class="gallery-shell"><button id="galleryPrev" class="gallery-nav" type="button" aria-label="Previous screenshot">‹</button><div class="gallery-image-wrap"><img id="galleryImage" alt="Project screenshot" /></div><button id="galleryNext" class="gallery-nav" type="button" aria-label="Next screenshot">›</button></div>
+    <div class="gallery-footer"><span id="galleryCounter"></span><div id="galleryDots" class="gallery-dots"></div></div>
+    <div id="dialogTags" class="skill-tags"></div><div id="dialogLinks" class="project-links"></div>
+  </dialog>
   <footer class="footer container"><span id="footerName">© Portfolio</span><span>Designed & built with care.</span><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>

@@ -37,3 +37,19 @@
 .contact-links{margin-top:28px;padding-top:29px;border-top:1px solid #263343;display:flex;justify-content:center;flex-wrap:wrap;gap:30px;font-size:16px;font-weight:700;color:#99a9bd}
 .contact-links a:hover{color:#51b4fa}
 @media(max-width:600px){.contact-heading{margin-bottom:28px}.heading-underline{margin-left:35px}.contact-panel{padding:28px 18px}.contact-form label{font-size:15px}.contact-form input,.contact-form textarea{font-size:15px}.contact-links{gap:18px;font-size:13px}}
+
+/* Project card actions and accessible image gallery */
+.project-open{padding:0;margin:0;width:100%;border:0;background:none;color:inherit;text-align:left;cursor:pointer;display:block;position:relative}
+.project-open:focus-visible,.gallery-nav:focus-visible,.dialog-header button:focus-visible,.gallery-dot:focus-visible{outline:3px solid #58b9ff;outline-offset:3px}
+.project-view{display:block;padding:10px 18px;background:#101f30;color:#75c6ff;font-size:12px;font-weight:700;border-bottom:1px solid #24364a}
+.project-open:hover .project-view{background:#153654;color:white}
+.project-image img{object-fit:contain;background:#0a1522}
+.project-dialog{width:min(850px,calc(100% - 24px));max-height:min(94vh,1000px);overflow:auto;border:1px solid #385777;border-radius:20px;background:#0b1522;color:#f5f9ff;padding:24px 30px 30px;box-shadow:0 20px 90px #000b}
+.project-dialog::backdrop{background:#01050bdb;backdrop-filter:blur(5px)}
+.dialog-header{display:flex;align-items:center;justify-content:space-between;gap:15px}.dialog-header span{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#69baff;font-weight:700}.dialog-header button{border:1px solid #344b61;background:#142b40;color:#fff;border-radius:9px;font-size:18px;width:40px;height:40px;cursor:pointer}
+.project-dialog h2{font:700 clamp(24px,4vw,34px)/1.2 'Space Grotesk',sans-serif;margin:12px 0}.project-dialog p{color:#bacadb;margin:0 0 19px}
+.gallery-shell{display:flex;gap:10px;align-items:center;background:#06101a;border:1px solid #273b50;border-radius:14px;padding:12px 6px;min-height:260px}
+.gallery-image-wrap{flex:1;display:grid;place-items:center;min-width:0}.gallery-image-wrap img{display:block;height:min(52vh,560px);max-width:100%;width:auto;object-fit:contain;border-radius:7px}
+.gallery-nav{background:#142f4c;color:#d7ecff;border:1px solid #325578;border-radius:10px;font-size:31px;width:40px;height:60px;flex:none;cursor:pointer}.gallery-nav:disabled{opacity:.3;cursor:default}
+.gallery-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;color:#a8c5e2;font-size:13px;margin:12px 0 18px}.gallery-dots{display:flex;gap:7px}.gallery-dot{width:9px;height:9px;border:0;border-radius:50%;background:#4a5a6d;padding:0;cursor:pointer}.gallery-dot.active{background:#349af4;width:22px;border-radius:9px}.project-dialog .project-links{margin-top:14px}.project-dialog .project-links:empty{display:none}
+@media(max-width:600px){.project-dialog{padding:18px 12px}.gallery-image-wrap img{height:min(55vh,480px)}.gallery-nav{width:30px;height:50px;font-size:24px}.gallery-shell{gap:4px}}
