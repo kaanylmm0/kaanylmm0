@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#050a11" />
   <meta name="description" content="Personal portfolio — software engineering, mobile apps, and selected projects." />
   <title>Portfolio | Software Engineer</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20261012-activities-cevrefest" />
   <script src="config.js" defer></script>
   <script src="script.js" defer></script>
 </head>
@@ -22,13 +22,13 @@
   <main>
     <section class="hero container" id="home"><div class="hero-copy">
       <p class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</p>
-      <h1>Hi, I'm <span class="gradient-text" id="heroName">Your Name</span><span class="wave">✳</span></h1>
+      <h1>Hi, I'm <span class="gradient-text" id="heroName">Your Name</span></h1>
       <h2 id="heroRole">Software Engineer · Mobile Developer</h2>
       <p class="hero-description" id="heroBio"></p>
-      <div class="actions"><a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" id="cvHero" href="assets/cv/CV.pdf" download>Download CV ↓</a></div>
+      <div class="actions"><a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" id="cvHero" href="assets/cv/Mehmet_Kaan_Yilmam_Public_CV.pdf" download>Download CV ↓</a></div>
       <div class="social-line"><a id="githubTop" target="_blank" rel="noopener noreferrer" href="#">GitHub ↗</a><a id="linkedinTop" target="_blank" rel="noopener noreferrer" href="#">LinkedIn ↗</a><a href="#contact">Get in touch ↗</a></div>
     </div><div class="hero-visual"><div class="photo-frame"><div class="photo-inner" id="heroPhoto"><span id="photoInitials">YN</span></div><span class="photo-corner top-left"></span><span class="photo-corner bottom-right"></span></div><div class="orbit-tag tag-one">&lt;developer /&gt;</div><div class="orbit-tag tag-two">Building useful things ✦</div></div></section>
-    <section class="section container" id="about"><div class="section-heading"><span class="section-number">01 / ABOUT</span><h2>A little about me<span class="accent">.</span></h2></div><div class="about-grid"><p class="about-lead" id="aboutLead"></p><div class="about-detail"><p id="aboutDetail"></p><a class="text-link" id="cvAbout" href="assets/cv/CV.pdf" download>Download my résumé <span>↗</span></a></div></div></section>
+    <section class="section container" id="about"><div class="section-heading"><span class="section-number">01 / ABOUT</span><h2>A little about me<span class="accent">.</span></h2></div><div class="about-grid"><p class="about-lead" id="aboutLead"></p><div class="about-detail"><p id="aboutDetail"></p><a class="text-link" id="cvAbout" href="assets/cv/Mehmet_Kaan_Yilmam_Public_CV.pdf" download>Download my résumé <span>↗</span></a></div></div></section>
     <section class="section container" id="skills"><div class="section-heading"><span class="section-number">02 / EXPERTISE</span><h2>My toolkit<span class="accent">.</span></h2></div><div class="skills-grid" id="skillsGrid"></div></section>
     <section class="section container" id="projects"><div class="section-heading section-heading-row"><div><span class="section-number">03 / SELECTED WORK</span><h2>Featured projects<span class="accent">.</span></h2></div><p>Ideas turned into experiences.</p></div><div class="projects-grid" id="projectsGrid"></div></section>
     <section class="section container" id="activities"><div class="section-heading"><span class="section-number">04 / BEYOND CODE</span><h2>Activities & experience<span class="accent">.</span></h2></div><div class="activity-list" id="activitiesList"></div></section>
@@ -54,9 +54,9 @@
     </section>
   </main>
   <dialog id="projectDialog" class="project-dialog" aria-labelledby="dialogTitle">
-    <div class="dialog-header"><span id="dialogCategory"></span><button id="dialogClose" type="button" aria-label="Close project details">✕</button></div>
+    <div class="dialog-header"><span id="dialogCategory"></span><button id="dialogClose" type="button" aria-label="Close gallery">✕</button></div>
     <h2 id="dialogTitle"></h2><p id="dialogDescription"></p>
-    <div class="gallery-shell"><button id="galleryPrev" class="gallery-nav" type="button" aria-label="Previous screenshot">‹</button><div class="gallery-image-wrap"><img id="galleryImage" alt="Project screenshot" /></div><button id="galleryNext" class="gallery-nav" type="button" aria-label="Next screenshot">›</button></div>
+    <div class="gallery-shell"><button id="galleryPrev" class="gallery-nav" type="button" aria-label="Previous image">‹</button><div class="gallery-image-wrap"><img id="galleryImage" alt="Gallery image" /></div><button id="galleryNext" class="gallery-nav" type="button" aria-label="Next image">›</button></div>
     <div class="gallery-footer"><span id="galleryCounter"></span><div id="galleryDots" class="gallery-dots"></div></div>
     <div id="dialogTags" class="skill-tags"></div><div id="dialogLinks" class="project-links"></div>
   </dialog>
